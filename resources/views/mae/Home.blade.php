@@ -1,17 +1,17 @@
-@extends('main_layout')
+@extends('main_layout2')
+
+@section('title')
+    <a class="navbar-brand area" href="#">Start Mision</a>
+@endsection
 
 @section('content')
-    <div class="container">
-        <div class="w3-container w3-black w3-padding-16">
-            <div class="" style="height:700px">
-                <div style="text-align: center" class="w3-padding-64">
-                    <div class='element'>Waviq</div>
+    <img class="img-responsive" src="{{asset('img/mae.png')}}" alt="">
+    <div class="intro-text">
 
-                </div>
-                <div class="w3-padding-64">
+        <span class="name"></span>
 
-                </div>
-            </div>
-        </div>
+        <hr class="star-light">
+        <span class="skills">Click <b style="color: #2a0efa">Start Mission</b> if you want know Who Am I</span><br>
+        <span class="skills">Promise you want answer all questions with Honest and Deepest of heart</span>
     </div>
 @endsection

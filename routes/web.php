@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('home','MaeController@index');
+Route::resource('data','DataController');
+Route::get('quiz1', 'QuizController@getPilgan');
+
+
+

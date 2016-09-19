@@ -3,11 +3,10 @@
  */
 
 $(function(){
-    for (i = 0; i < element; i++) {
-        $(".element").typed({
-            strings: ["Hallo Mae.", "Apakabar? Penasaran ya?."],
-            typeSpeed: 0
-        });
-    }
+    $(".name").typed({
+        strings: ["Hello Mae.", "You are spesials friend for following this mission."],
+        typeSpeed: 50,
+        loop: true
 
+    });
 });

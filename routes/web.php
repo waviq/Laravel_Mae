@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 Route::get('home','MaeController@index');
 Route::resource('data','DataController');
-Route::get('quiz1', 'QuizController@getPilgan');
+Route::get('quiz1', 'QuizController@getMision2');
+Route::post('quiz1','QuizController@postMission2');
 
 
 

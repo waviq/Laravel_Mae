@@ -36,7 +36,7 @@
                                     <input type="text" name="custom" id="custom" placeholder="should be 5 charecters at least" >
                                     <br><br>
                                     <input onclick="document.getElementById('custom').disabled = true; document.getElementById('charstype').disabled = false;" type="radio" name="type" value="customurl">random?
-                                    
+
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>

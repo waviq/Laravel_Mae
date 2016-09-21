@@ -43,7 +43,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Alamat</label>
-                                <textarea rows="5" class="form-control" placeholder="Alamat lengkap" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Alamat lengkap (penting untuk ngirim tukang pijet kalo lagi sakit)" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

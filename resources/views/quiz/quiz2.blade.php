@@ -25,13 +25,15 @@
                             {{--<input type="checkbox"  v-model="checked">
                             <label style="color: #0d3625" for="checkbox">@{{ checked }}</label>--}}
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                {!!  Form::hidden('id', 1)!!}
-                                <h4 style="color: #1a242f">Soal 1</h4>
+                                {!!  Form::hidden('id', 2)!!}
+                                <h4 style="color: #1a242f">Soal 2</h4>
                                 <div style="text-align: left; color: #1a242f;" class="form-group col-xs-12 form-group controls">
-                                   <p style="color: #1a242f;">Jika saya suka masakan pedes, maka kamu suka masakan yang?</p>
-                                    {!! Form::radio('answer', 'Pedes') !!} Pedas <br />
-                                    {!! Form::radio('answer', 'Sedang') !!} Sedang <br />
-                                    {!! Form::radio('answer', 'Sedang') !!} Manis <br />
+                                   <p style="color: #1a242f;">Jika di hari weekend aku lebih memilih untuk mengisi waktu dengan berbagai macam kegiatan positif.
+                                       Dari pilihan berikut ini, manakah yang kamu suka ketika mengisi waktu di hari weekend?</p>
+                                    {!! Form::radio('answer', 'Pergi ke pengajian, ngajar ngaji, dan yang sejenisnya') !!} Pergi ke pengajian, ngajar ngaji, dan yang sejenisnya <br />
+                                    {!! Form::radio('answer', 'Pergi ke mall bersama teman') !!} Pergi ke mall bersama teman <br />
+                                    {!! Form::radio('answer', 'Bobok cantik di kamar') !!} Bobok cantik di kamar <br />
+                                    {!! Form::radio('answer', 'Tergantung situasi dan kondisi') !!} Tergantung situasi dan kondisi <br />
 
                                     <input type="radio" name="answer"  v-model="Model">Jawaban Lainya
                                     <input style="font-size: 16px" class="form-control" name="answer2" type="text"
@@ -39,7 +41,9 @@
                                            v-show="Model"/>
                                     {{--<p class="help-block text-danger"></p>--}}
                                 </div>
+
                             </div>
+                            @include('errors.validasi')
 
                         </div>
 

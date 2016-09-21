@@ -24,7 +24,17 @@ class Mision2Request extends FormRequest
     public function rules()
     {
         return [
-            'answer'    =>  'required'
+            'answer'    =>  'required',
+
+        ];
+
+
+    }
+
+    public function messages()
+    {
+        return [
+            'answer.required'  => 'Jawab dong Mae...^_^',
         ];
     }
 }

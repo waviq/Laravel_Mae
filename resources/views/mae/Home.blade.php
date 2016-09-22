@@ -1,7 +1,7 @@
 @extends('main_layout2')
 
 @section('title')
-    <a class="navbar-brand area" href="#">Start Mision</a>
+    <a class="navbar-brand area" href="{{url(action('QuizController@getMision2Quiz1'))}}">Start Mision</a>
 @endsection
 
 @section('content')

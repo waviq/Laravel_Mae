@@ -2,21 +2,26 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class MaeSeeder extends Seeder
 {
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
     public function run()
     {
         DB::table('users')->insert([
             'name'  =>  'mae',
             'email'     =>  'mae',
-            'password'  =>  bcrypt('mae'),
+            'password'  =>  Hash::make('mae'),
             'alamat'    =>  'cerbon',
             'tanggalLahir'  => '24 Maret 1990'
         ]);
         DB::table('users')->insert([
             'name'  =>  'waviq',
             'email'     =>  'waviq',
-            'password'  =>  bcrypt('waviq'),
+            'password'  =>  Hash::make('waviq'),
             'alamat'    =>  'Tegal',
             'tanggalLahir'  => '24 Maret 1990'
         ]);

@@ -1,7 +1,7 @@
 @extends('main_layout2')
 
 @section('title')
-    <a class="navbar-brand" href="#">Misi 1: Isi Data Personalize</a>
+    <a class="navbar-brand" href="#">Misi 1: Aku bukan peramal</a>
 @endsection
 
 @section('content')

@@ -21,6 +21,13 @@
     <section style="background: white" id="contact">
         <div style="padding: 0" class="container">
             <div class="row">
+                @if($question->answered == 1)
+                    <div class="col-lg-3">
+                        <div style="text-align: center" class="alert alert-success">
+                            <strong>Makasih ya,</strong> Sudah dijawab.
+                        </div>
+                    </div>
+                @endif
                 <div class="col-lg-12 text-center">
                     <h2 style="color: #0d3625">Jika kamu nge fens dengan suatu <br/> tokoh pria di novel, kamu harus menjadi seperti</h2>
                     <hr class="star-primary">
@@ -34,7 +41,7 @@
 
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            {!!  Form::hidden('id', 6)!!}
+                            {!!  Form::hidden('id', 8)!!}
                             <div style="text-align: left; color: #1a242f"
                                  class="form-group col-xs-12 form-group controls">
                                 <p> {!! Form::radio('answer','Dilan') !!} Dilan</p> <br/>

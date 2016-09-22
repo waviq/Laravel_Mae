@@ -160,7 +160,8 @@
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('plugins/bootstrap/js/bootstrap.min.js')}}"></script>--}}
 <script src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('plugins/jquery/typed.js')}}"></script>
+<script src="{{asset('js/typed.js')}}"></script>
+{{--<script src="{{asset('plugins/jquery/typed.js')}}"></script>--}}
 <script src="{{asset('js/custom.js')}}"></script>
 
 

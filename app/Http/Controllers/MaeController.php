@@ -8,6 +8,12 @@ use App\Http\Requests;
 
 class MaeController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         return view('mae.Home');
     }

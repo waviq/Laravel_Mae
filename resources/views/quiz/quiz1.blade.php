@@ -9,7 +9,15 @@
     <section style="background: white" id="contact">
         <div style="padding: 0" class="container">
             <div class="row">
+                @if($question->answered == 1)
+                    <div class="col-lg-3">
+                        <div style="text-align: center" class="alert alert-success">
+                            <strong>Makasih ya,</strong> Sudah dijawab.
+                        </div>
+                    </div>
+                @endif
                 <div class="col-lg-12 text-center">
+
                     <h2 style="color: #0d3625">Isi Data dengan jujur ya, dosa loch kalo boong</h2>
                     <hr class="star-primary">
                 </div>
@@ -19,7 +27,6 @@
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     {!! Form::open(['url' => 'quiz']) !!}
-
 
                         <div class="row control-group">
                             {{--<input type="checkbox"  v-model="checked">
@@ -31,7 +38,7 @@
                                    <p style="color: #1a242f;">Jika saya suka masakan pedes, maka kamu suka masakan yang?</p>
                                     {!! Form::radio('answer', 'Pedes') !!} Pedas <br />
                                     {!! Form::radio('answer', 'Sedang') !!} Sedang <br />
-                                    {!! Form::radio('answer', 'Sedang') !!} Manis <br />
+                                    {!! Form::radio('answer', 'Manis') !!} Manis <br />
 
                                     <input type="radio" name="answer"  v-model="Model">Jawaban Lainya
                                     <input style="font-size: 16px" class="form-control" name="answer2" type="text"
@@ -40,6 +47,7 @@
                                     {{--<p class="help-block text-danger"></p>--}}
                                 </div>
                             </div>
+                            @include('errors.validasi')
 
                         </div>
 

@@ -28,13 +28,20 @@
 
             </div>
             <div class="row">
+                @if($question->answered == 1)
+                    <div class="col-lg-3">
+                        <div style="text-align: center" class="alert alert-success">
+                            <strong>Makasih ya,</strong> Sudah dijawab.
+                        </div>
+                    </div>
+                @endif
                 <div class="col-lg-8 col-lg-offset-2">
                     {!! Form::open(['url' => 'quiz']) !!}
 
 
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            {!!  Form::hidden('id', 6)!!}
+                            {!!  Form::hidden('id', 7)!!}
                             <div style="text-align: left; color: #1a242f"
                                  class="form-group col-xs-12 form-group controls">
                                 <p> {!! Form::radio('answer','Milea') !!} Milea</p> <br/>

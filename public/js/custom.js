@@ -34,3 +34,13 @@ $(function(){
 
     });
 });
+
+$(function(){
+    $(".restOke").typed({
+        strings: ["Hello Mae.", "Gimana? Masih semangat kan?",
+            "Ini misi terakhir kamu.","Jawab dengan serius ya","kalo cape dan bingung istirahat dulu aja","atau aku panggilin bi Asih buat mijet kamu dulu"],
+        typeSpeed: 50,
+        loop: true
+
+    });
+});

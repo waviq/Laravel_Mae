@@ -9,6 +9,13 @@
     <section style="background: white" id="contact">
         <div style="padding: 0" class="container">
             <div class="row">
+                @if($question->answered == 1)
+                    <div class="col-lg-3">
+                        <div style="text-align: center" class="alert alert-success">
+                            <strong>Makasih ya,</strong> Sudah dijawab.
+                        </div>
+                    </div>
+                @endif
                 <div class="col-lg-12 text-center">
                     <h2 style="color: #0d3625">Isi Data dengan jujur ya, dosa loch kalo boong</h2>
                     <hr class="star-primary">
@@ -24,11 +31,11 @@
                             {!!  Form::hidden('id', 4)!!}
                             <h4 style="color: #1a242f">Soal 4</h4>
                             <div style="text-align: left; color: #1a242f" class="form-group col-xs-12 form-group controls">
-                                <p style="color: #1a242f;">Jika aku seneng jalan-jalan kalo lagi libur panjang. Dan kamu seneng mengisi liburan panjangku dengan?</p>
-                                {!! Form::radio('answer', 'Ikut pengajian senenan, selasanan, reboan, kamisan, jumatan, saptunan, dan mingguan') !!} Ikut pengajian senenan, selasanan, reboan, kamisan, jumatan, saptunan, dan mingguan <br />
-                                {!! Form::radio('answer', 'Jalan-jalan bareng teman') !!} Jalan-jalan bareng teman <br />
-                                {!! Form::radio('answer', 'Pulang ke kampung halaman') !!} Pulang ke kampung halaman <br />
-                                {!! Form::radio('answer', 'Bobok cantik di kamar') !!} Bobok cantik, sholat, makan, dan bobok lagi <br />
+                                <p style="color: #1a242f;">Jika aku ada masalah seneng curhat Allah SWT, temen, minta masukan, dan jenisnya. Maka kamu?</p>
+                                {!! Form::radio('answer', 'Sama, melakukan hal yang sama') !!} Sama, melakukan hal yang sama <br />
+                                {!! Form::radio('answer', 'Lebih seneng menyimpan buat sendiri') !!} Lebih seneng menyimpan buat sendiri <br />
+                                {!! Form::radio('answer', 'Saya lebih cuek dan gak dipikirin kalo ada masalah') !!} Saya lebih cuek dan gak dipikirin kalo ada masalah <br />
+                                {!! Form::radio('answer', 'Nangis-nangis, susah move on, dan bobok cantik biar lama-lama ilang') !!} Nangis-nangis, susah move on, dan bobok cantik biar lama-lama ilang <br />
                                 <input type="radio" name="answer"  v-model="Model">Jawaban Lainya
                                 <input style="font-size: 16px" class="form-control" name="answer2" type="text"
                                        placeholder="tulis jawaban disini dan kudu jujur ya"

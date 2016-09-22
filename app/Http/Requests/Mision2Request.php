@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Question;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Input;
 
 class Mision2Request extends FormRequest
 {
@@ -25,9 +27,7 @@ class Mision2Request extends FormRequest
     {
         return [
             'answer'    =>  'required',
-
         ];
-
 
     }
 

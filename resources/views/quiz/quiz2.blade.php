@@ -9,6 +9,13 @@
     <section style="background: white" id="contact">
         <div style="padding: 0" class="container">
             <div class="row">
+                @if($question->answered == 1)
+                    <div class="col-lg-3">
+                        <div style="text-align: center" class="alert alert-success">
+                            <strong>Makasih ya,</strong> Sudah dijawab.
+                        </div>
+                    </div>
+                @endif
                 <div class="col-lg-12 text-center">
                     <h2 style="color: #0d3625">Isi Data dengan jujur ya, dosa loch kalo boong</h2>
                     <hr class="star-primary">
